@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(7, 50px); /* Smaller columns */
+    grid-template-rows: repeat(3, 50px); /* Smaller rows */
+    gap: 5px; /* Remove gap between cells */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust width to fill the grid */
+    height: 50px; /* Adjust height to fill the grid */
+    background-color: white;
+    border: 2px solid black;
+    font-size: 1em; /* Adjust font size for smaller cells */
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.cell:hover {
+    border-color: #e0e0e0;
+}
+
+#cell-back {
+    height: 165px;
+    width: 385px;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-top: 6%;
+}
