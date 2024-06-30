@@ -1,19 +1,21 @@
 <div>
     <form>
-        <label for="Variant">Variant:</label>
+        <label for="Variant" id="var">Variant:</label>
         <select id="options" name="options">
             <option value="option1">Cardinal Neighbors</option></select
         ><br />
-        <label for="width">Width:</label>
-        3<input type="range" id="width" name="width" min="3" max="10" />10<br />
-        <label for="Height">Height:</label>
-        3<input
-            type="range"
-            id="Height"
-            name="Height"
-            min="3"
-            max="10"
-        />10<br />
+        <label for="width" id="wit">Width:</label>
+        <span id="num1">3</span
+        ><input type="range" id="width" name="width" min="3" max="10" /><span
+            id="num2"
+            >10</span
+        ><br />
+        <label for="Height" id="hit">Height:</label>
+        <span id="num3">3</span
+        ><input type="range" id="Height" name="Height" min="3" max="10" /><span
+            id="num4"
+            >10</span
+        ><br />
     </form>
     <button id="reset">New Game</button>
 </div>
