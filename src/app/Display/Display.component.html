@@ -1,23 +1,32 @@
-<div>
-    <form>
-        <label for="Variant" id="var">Variant:</label>
-        <select id="options" name="options">
-            <option value="option1">Cardinal Neighbors</option></select
-        ><br />
-        <label for="width" id="wit">Width:</label>
-        <span id="num1">3</span
-        ><input type="range" id="width" name="width" min="3" max="10" /><span
-            id="num2"
-            >10</span
-        ><br />
-        <label for="Height" id="hit">Height:</label>
-        <span id="num3">3</span
-        ><input type="range" id="Height" name="Height" min="3" max="10" /><span
-            id="num4"
-            >10</span
-        ><br />
-    </form>
-    <button id="reset">New Game</button>
-</div>
+<div class="container">
+    <div class="class">
+        <form>
+            <label for="Variant" id="var">Variant:</label>
+            <select id="options" name="options">
+                <option value="option1">Cardinal Neighbors</option></select
+            ><br />
 
-<div id="display-comp"></div>
+            <label for="width" id="wit">Width:</label>
+            <div class="range-container">
+                <span id="num1">3</span>
+                <input type="range" id="width" name="width" min="3" max="10" />
+                <span id="num2">10</span>
+            </div>
+
+            <label for="Height" id="hit">Height:</label>
+            <div class="range-container">
+                <span id="num3">3</span>
+                <input
+                    type="range"
+                    id="Height"
+                    name="Height"
+                    min="3"
+                    max="10"
+                />
+                <span id="num4">10</span>
+            </div>
+        </form>
+        <button id="reset">New Game</button>
+    </div>
+    <div id="display-comp"></div>
+</div>

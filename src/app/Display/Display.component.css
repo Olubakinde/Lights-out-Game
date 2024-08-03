@@ -1,27 +1,116 @@
-#var {
+/* Base styles */
+.container {
+    display: flex;
+    gap: 20px; /* Space between the two divs */
+}
+
+.class {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
+    max-width: 300px;
+    width: 100%;
 }
 
-#wit {
+#display-comp {
+    padding: 20px;
+    border-radius: 10px;
     color: white;
+    max-width: 300px;
+    width: 100%;
 }
 
-#hit {
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select,
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    background-color: #fff;
+    color: #333;
+}
+
+.range-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.range-container span {
+    width: 30px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
     color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-#num1 {
-    color: grey;
+button:hover {
+    background-color: #0056b3;
 }
 
-#num2 {
-    color: red;
+/* Responsive styles */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .class,
+    #display-comp {
+        max-width: 100%;
+    }
 }
 
-#num3 {
-    color: grey;
-}
+/* For smaller phones */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Adjust spacing */
+    }
 
-#num4 {
-    color: red;
+    #display-comp {
+        order: 2; /* Ensures #display-comp comes after .class */
+    }
+
+    .class {
+        order: 1; /* Ensures .class comes before #display-comp */
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    select,
+    input[type="range"],
+    button {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .range-container span {
+        width: 25px;
+    }
 }
